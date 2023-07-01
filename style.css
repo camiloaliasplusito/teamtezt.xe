@@ -1,0 +1,93 @@
+.fondodearriba{
+    background-image:url(fondo\ test.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:1491;
+    height:127;
+    margin-top:-140;
+  
+   
+}
+
+
+.imagen{
+    margin-left:25px; /*No tocar*/
+    
+}
+
+.rayahorizonal{
+    width:1491;  /*No tocar*/
+    height:4;
+    background-color:rgb(255, 217, 0);
+    
+}
+
+.central{
+    width:1491;
+    height:589;
+    background-color:black;
+    
+    
+}
+
+.fondodearriba a{
+ 
+    color:rgb(89, 0, 255);
+    font-size:26;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:none;
+    background-color:rgb(255, 221, 0);
+    border-radius:23px;
+
+}
+
+.donaciones img{
+    
+    margin-top:-117;
+    margin-left:1323px;
+}
+
+/**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+  width: 50%;
+  height: 589px;
+  overflow: hidden;
+
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}
